@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    background-color: cadetblue;
+}
+
+#song-stats {
+    background-color: antiquewhite;
+    width: 450px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-top: 60px;
+    border-radius: 20%;
+}
