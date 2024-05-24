@@ -9,52 +9,34 @@
     <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}">
 </head>
 <body>
-    <div id="song-stats">
+    <div id="song-stuff">
         {% if title %}
             <h1>{{ title }}</h1>
-        {% endif %}
-        {% if artist %}
-            <p>Artist: {{ artist }}</p>
-        {% endif %}
-        {% if album %}
-            <p>Album: {{ album }}</p>
-        {% endif %}
-        {% if duration %}
-            <p>Duration: {{ duration }}</p>
         {% endif %}
         <audio id="audio-player" controls>
             <source src="{% static 'music/' %}{{ file_name }}" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <button id="skip-button">Skip</button> <!-- Skip button -->
-        {% if next_title %}
-            <hr>
-            <h3>Next Song:</h3>
-            <p>Title: {{ next_title }}</p>
-            <p>Artist: {{ next_artist }}</p>
-            <p>Album: {{ next_album }}</p>
-            <p>Duration: {{ next_duration }}</p>
-        {% endif %}
+        <button class="button" id="skip-button">Skip</button>
+        <a href="{% url 'song_info' %}?file_name={{ file_name }}"">
+            <button class="button">Show Information</button>
+        </a>
     </div>
     
     <script>
         const audioPlayer = document.getElementById('audio-player');
         
         audioPlayer.addEventListener('ended', () => {
-            // Reload the page to play the next song
             window.location.href = window.location.pathname + '?next=true';
         });
 
         document.getElementById('skip-button').addEventListener('click', () => {
-            // Reload the page to skip to the next song
             window.location.href = window.location.pathname + '?next=true';
         });
 
-        // Automatically play the next song if the query parameter 'next' is present
         const urlParams = new URLSearchParams(window.location.search);
         const playNext = urlParams.get('next');
         if (playNext === 'true') {
-            // Click the audio player to start playing the next song
             audioPlayer.play();
         }
     </script>

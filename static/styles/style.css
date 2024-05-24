@@ -3,12 +3,61 @@ body {
     background-color: cadetblue;
 }
 
-#song-stats {
+#song-stuff {
     background-color: antiquewhite;
     width: 450px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 200px;
+    padding-top: 100px;
+    border-radius: 20%;
+}
+
+#song-stats {
+    background-color: antiquewhite;
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+    margin-top: 200px;
     padding-top: 60px;
     border-radius: 20%;
 }
+
+/* Style for normal button */
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  /* Style for button hover effect */
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for button when clicked */
+  .button:active {
+    background-color: #3e8e41;
+  }
+
+#skip-button {
+    background-color: #af4c4c; /* Green */
+}
+
+#skip-button:hover {
+    background-color: #a04545;
+  }
+  
+  /* Style for button when clicked */
+  #skip-button:active {
+    background-color: #8e3e3e;
+  }
+  
