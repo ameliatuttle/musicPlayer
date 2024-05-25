@@ -23,9 +23,8 @@ body {
     border-radius: 20%;
 }
 
-/* Style for normal button */
 .button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -38,26 +37,23 @@ body {
     border-radius: 8px;
   }
   
-  /* Style for button hover effect */
-  .button:hover {
+.button:hover {
     background-color: #45a049;
-  }
+}
   
-  /* Style for button when clicked */
-  .button:active {
+.button:active {
     background-color: #3e8e41;
-  }
+}
 
 #skip-button {
-    background-color: #af4c4c; /* Green */
+    background-color: #af4c4c;
 }
 
 #skip-button:hover {
     background-color: #a04545;
-  }
+}
   
-  /* Style for button when clicked */
-  #skip-button:active {
+#skip-button:active {
     background-color: #8e3e3e;
-  }
+}
   

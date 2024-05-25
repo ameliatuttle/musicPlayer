@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'player',
+    'player', # Add my app player
 ]
 
 MIDDLEWARE = [
@@ -49,8 +49,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-# Heroku settings
 
 ROOT_URLCONF = 'musicPlayer.urls'
 
