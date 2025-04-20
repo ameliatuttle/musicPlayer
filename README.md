@@ -17,14 +17,3 @@ The html files that are used in a django project are called templates. In this p
 In order to develop and learn this software, the tools I used were YouTube tutorials, the terminal, and Django. I watched a YouTube tutorial that set up a mini project called storfront. It showed me how to start a new project from the terminal and the basics of what the files meant. A django project is innitially started using several commands in the terminal, so I got comfortable using it. The biggest tool for this project was obviously the web framework django that creates the outline and deploys the application.
 
 The main programming language used is python. Python is a high-level object-oriented programming language that is frequently used for web development. In django, python is what powers the backend, so it does things like route the URL, handle user input, and interact with a database. A library I used for this project is mutagen. It handles audio metadata which I needed for this project to extract information from the MP3 files. 
-
-# Useful Websites
-
-* [Programming with Mosh: Python Django Tutorial for Beginners](https://www.youtube.com/watch?v=rHux0gMZ3Eg)
-* [W3 Schools: Django Tutorials](https://www.w3schools.com/django/)
-
-# Future Work
-
-* Less time in tutorials so there is more time for the actual project.
-* Look at classsmates submissions to see if they have helpful resourses under "Usefule Websites".
-* Follow outlined schedule more closely. 
